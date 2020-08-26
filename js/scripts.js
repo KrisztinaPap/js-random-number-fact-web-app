@@ -35,7 +35,11 @@ fetch ( 'http://numbersapi.com/random/year?json' )
         factSpot.appendChild( factP );
 
         newNumberButton.addEventListener( "click", ( event ) => {
-        console.log("New number!");
-        location.reload();
-    } );
+            console.log("New number!");
+
+            // Citation
+            //      https://www.w3schools.com/jsref/met_loc_reload.asp
+            //      The below line of code reloads the browser on button click
+            location.reload();
+        } );
 })
