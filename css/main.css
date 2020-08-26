@@ -31,6 +31,7 @@ h1 {
     padding: 8px 20px;
     background-color: darkslategray;
     color: whitesmoke;
+    margin-top: 1rem;
 }
 .button:hover {
     box-shadow: black 3px 6px;
@@ -43,4 +44,10 @@ h1 {
     height: 50vh;
     max-width: 90vw;
     margin: auto;
+}
+
+@media screen and ( min-width: 900px ) {
+    #fact-spot {
+        width: 800px;
+    }
 }
