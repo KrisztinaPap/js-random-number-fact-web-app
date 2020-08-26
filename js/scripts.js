@@ -16,6 +16,8 @@ fetch ( 'http://numbersapi.com/random/year?json' )
         // Put the data into the elements
         factH2.textContent = `${newNumber}`;
         factPText.textContent = `${newFact}`;
+        factH2.classList.add( "number" );
+        factPText.classList.add( "fact" );
 
         // Append elements to parent paragraph
         factP.appendChild( factH2 );

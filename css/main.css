@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Bungee', cursive;  
+}
+
+.number {
+    font-size: 2.4rem;
+    font-family: 'Bungee', cursive;
+}
+
+.fact {
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    max-width: 90vw;
+    margin: auto;
+}
