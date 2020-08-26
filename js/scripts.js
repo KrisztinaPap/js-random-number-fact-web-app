@@ -12,6 +12,7 @@ fetch ( 'http://numbersapi.com/random/year?json' )
         const factP = document.createElement( 'P' );
         const factH2 = document.createElement( 'H2' );
         const factPText = document.createElement( 'P' );
+        const factButton = document.createElement( 'BUTTON' );
 
         // Put the data into the elements
         factH2.textContent = `${newNumber}`;
@@ -19,11 +20,22 @@ fetch ( 'http://numbersapi.com/random/year?json' )
         factH2.classList.add( "number" );
         factPText.classList.add( "fact" );
 
+        // Add missing info to elements
+        factButton.type = "button";
+        factButton.id = "newNumberButton";
+        factButton.classList.add("button");
+        factButton.innerHTML = "New Random Number!";
+
         // Append elements to parent paragraph
         factP.appendChild( factH2 );
         factP.appendChild( factPText );
+        factP.appendChild( factButton );
 
         // Add paragraph container into main HTML
         factSpot.appendChild( factP );
 
-     } );
+        newNumberButton.addEventListener( "click", ( event ) => {
+        console.log("New number!");
+        location.reload();
+    } );
+})

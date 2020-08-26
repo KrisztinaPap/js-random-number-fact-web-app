@@ -27,6 +27,15 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 }
 
+.button {
+    padding: 8px 20px;
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+.button:hover {
+    box-shadow: black 3px 6px;
+}
+
 #container {
     display: flex;
     justify-content: center;
