@@ -1,4 +1,4 @@
-fetch ( 'http://numbersapi.com/random/year?json' )
+fetch ( 'https://numbersapi.com/random/year?json' )
     .then( response => response.json() )
     .then( data => { 
 
